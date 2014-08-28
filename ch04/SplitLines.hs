@@ -9,3 +9,6 @@ splitLines cs =
                 _                -> []
 
 isLineTerminator c = c == '\r' || c == '\n'
+
+fixLines :: String -> String
+fixLines input = unlines (splitLines input)
